@@ -1,0 +1,14 @@
+<h1><%= @list.id ? 'Edit Bucket List' : 'Create Bucket List' %></h1>
+<hr />
+<%= form_for List.new do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br />
+  <%= f.label :bucket_list %>
+  <%= f.text_field :bucket %>
+  <br />
+  <%= f.label :destination %>
+  <%= f.text_area :destination %>
+  <br />
+  <%= f.submit %>
+<% end %>

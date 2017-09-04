@@ -1,0 +1,8 @@
+<h1><%= @list %></h1>
+<hr />
+<p>What would you like to do?</p>
+<%= link_to 'View Bucket List', lists_path(@list) %>
+<br />
+<%= link_to 'Edit Bucket List', edit_list_destination_path([@list, @destination]) %>%
+<br />
+<%= link_to 'Delete Bucket List', @list, method: :delete %>
